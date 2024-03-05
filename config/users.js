@@ -3,7 +3,7 @@ module.exports=(sequelize,DataTypes)=>{
         empName:DataTypes.STRING,
         empemail:{
             type:DataTypes.STRING,
-            defaultValue:'test@test.com'
+            defaultValue:'test@test.com',
         },
         empGender:{
             type:DataTypes.STRING,

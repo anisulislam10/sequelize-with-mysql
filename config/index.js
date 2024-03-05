@@ -17,6 +17,7 @@ const db={};
 db.Sequelize=sequelize;
 db.sequelize=sequelize;
 db.users=require('./users')(sequelize,DataTypes);
+db.sequelize.sync({sync:true})
 db.sequelize.sync().then(()=>{
     console.log('Synced..');
 })
